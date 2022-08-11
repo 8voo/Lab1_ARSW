@@ -21,5 +21,15 @@ public class BusquedaThread extends Thread{
 
     @Override
     public void run(){
+        for (int i=0;i<skds.getRegisteredServersCount() && ocurrencesCount<BLACK_LIST_ALARM_COUNT;i++){
+            checkedListsCount++;
+
+            if (skds.isInBlackListServer(i, ipaddress)){
+
+                blackListOcurrences.add(i);
+
+                ocurrencesCount++;
+            }
+        }
     }
 }
