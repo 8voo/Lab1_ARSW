@@ -18,7 +18,12 @@ import java.util.logging.Logger;
 public class HostBlackListsValidator {
 
     private static final int BLACK_LIST_ALARM_COUNT=5;
-    
+    private LinkedList<Integer> blackListOcurrences;
+
+    public LinkedList<Integer> getBlackListOcurrences(){
+        return blackListOcurrences;
+    }
+
     /**
      * Check the given host's IP address in all the available black lists,
      * and report it as NOT Trustworthy when such IP was reported in at least
@@ -29,9 +34,9 @@ public class HostBlackListsValidator {
      * @param ipaddress suspicious host's IP address.
      * @return  Blacklists numbers where the given host's IP address was found.
      */
-    public List<Integer> checkHost(String ipaddress){
-        
-        LinkedList<Integer> blackListOcurrences=new LinkedList<>();
+    public List<Integer> checkHost(String ipaddress, int N){
+
+        blackListOcurrences=new LinkedList<>();
         
         int ocurrencesCount=0;
         

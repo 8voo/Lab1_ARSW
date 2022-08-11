@@ -16,13 +16,10 @@ import java.util.List;
 public class Main {
     
     public static void main(String a[]){
-//        HostBlackListsValidator hblv=new HostBlackListsValidator();
-//        List<Integer> blackListOcurrences=hblv.checkHost("200.24.34.55");
-//        System.out.println("The host was found in the following blacklists:"+blackListOcurrences);
-        BusquedaThread thread1 = new BusquedaThread("200.24.34.55");
-        BusquedaThread thread2 = new BusquedaThread("205.24.34.55");
-        thread1.start();
-        thread2.start();
+        HostBlackListsValidator hblv=new HostBlackListsValidator();
+        List<Integer> blackListOcurrences=hblv.checkHost("200.24.34.55",1);
+        System.out.println("The host was found in the following blacklists:"+blackListOcurrences);
+
     }
     
 }
