@@ -21,7 +21,13 @@
     2. Inicie los tres hilos con 'start()'.
     3. Ejecute y revise la salida por pantalla. 
     4. Cambie el incio con 'start()' por 'run()'. Cómo cambia la salida?, por qué?.
-   Cuando usamos Start(), las funciones corren al tiempo, por lo tanto, los output salen en un orden distinto al esperado. Mientras que con run() se corren todos en el orden dado.
+   - Cuando usamos Start(), las funciones corren al tiempo, por lo tanto, los output salen en un orden distinto al esperado. 
+   ![image](https://user-images.githubusercontent.com/98104282/185035283-5bf87237-f5b6-4380-a06e-e992f211ee33.png)
+
+
+   - Mientras que con run() se corren todos en el orden dado.
+   ![image](https://user-images.githubusercontent.com/98104282/185035481-bd4408ac-7b2a-4b1f-869a-54e686ed42eb.png)
+
 
 **Parte II - Ejercicio Black List Search**
 
