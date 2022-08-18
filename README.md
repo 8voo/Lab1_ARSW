@@ -115,5 +115,6 @@ Como podemos ver en la grafica, el tiempo es menor a medida que se incrementa el
 
 3. De acuerdo con lo anterior, si para este problema en lugar de 100 hilos en una sola CPU se pudiera usar 1 hilo en cada una de 100 máquinas hipotéticas, la ley de Amdahls se aplicaría mejor?. Si en lugar de esto se usaran c hilos en 100/c máquinas distribuidas (siendo c es el número de núcleos de dichas máquinas), se mejoraría?. Explique su respuesta.
 
+No mejoraria, pues si se usa solo un hilo en cada pc. Por lo tanto no se utiliza el 100% de la capacidad del procesador de la maquima. En cambio, si usamos los nucleos del procesador del computador, se estaria aprovechando al maximo la potencia del pc.
 
 
