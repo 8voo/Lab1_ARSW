@@ -74,18 +74,32 @@ La estrategia de paralelismo antes implementada es ineficiente en ciertos casos,
 A partir de lo anterior, implemente la siguiente secuencia de experimentos para realizar las validación de direcciones IP dispersas (por ejemplo 202.24.34.55), tomando los tiempos de ejecución de los mismos (asegúrese de hacerlos en la misma máquina):
 
 1. Un solo hilo.
+
 	![image](https://user-images.githubusercontent.com/98189066/185267116-dcb033d7-3472-4f51-b1e6-d7eb3a504526.png)
 	
-2. Tantos hilos como núcleos de procesamiento (haga que el programa determine esto haciendo uso del [API Runtime](https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html)).
+2. Tantos hilos como núcleos de procesamiento (haga que el programa determine esto haciendo uso del [API Runtime](https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html)). (8 nucleos)
+
 	![image](https://user-images.githubusercontent.com/98189066/185271319-0e7ae837-3247-47ef-ae03-a10ea4b17d07.png)
 
-3. Tantos hilos como el doble de núcleos de procesamiento.
-4. 50 hilos.
-5. 100 hilos.
+3. Tantos hilos como el doble de núcleos de procesamiento. (16 nucleos)
+
+	![image](https://user-images.githubusercontent.com/98189066/185271444-01ecf5be-4827-41a3-a63e-8bd785f4d77a.png)
+
+5. 50 hilos.
+	![image](https://user-images.githubusercontent.com/98189066/185271464-a9658e98-677e-4921-a973-144078c8b6cd.png)
+
+
+7. 100 hilos.
+
+	![image](https://user-images.githubusercontent.com/98189066/185271523-5d35abcd-1873-4656-9aa8-089116247301.png)
+
 
 Al iniciar el programa ejecute el monitor jVisualVM, y a medida que corran las pruebas, revise y anote el consumo de CPU y de memoria en cada caso. ![](img/jvisualvm.png)
 
 Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tiempo de solución vs. número de hilos. Analice y plantee hipótesis con su compañero para las siguientes preguntas (puede tener en cuenta lo reportado por jVisualVM):
+
+![image](https://user-images.githubusercontent.com/98189066/185271543-0ce86eac-abc8-48ba-b53c-c1167db6c519.png)
+
 
 **Parte IV - Ejercicio Black List Search**
 
