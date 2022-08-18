@@ -112,6 +112,7 @@ Como podemos ver en la grafica, el tiempo es menor a medida que se incrementa el
 	Debido a la ley de Amdahls, podemos confirmar la hipotesis dada anteriormente, en la cual se dice que no se aumenta el desempeño haciendo uso de mas hilos con menos frecuencia. Ya que hay un punto en el que depende de la propia capacidad del procesador
 
 2. Cómo se comporta la solución usando tantos hilos de procesamiento como núcleos comparado con el resultado de usar el doble de éste?.
+Cuando se usan tantos números de hilos como números de núcleos el tiempo es de 20s, cuando se  16 hilos es decir el doble de hilos por numero de núcleos el tiempo de ejecución baja a 10s, en este caso el trabajo se distribuye de una mejor manera y puede ser una buena opción para proyectos de mayor escala
 
 3. De acuerdo con lo anterior, si para este problema en lugar de 100 hilos en una sola CPU se pudiera usar 1 hilo en cada una de 100 máquinas hipotéticas, la ley de Amdahls se aplicaría mejor?. Si en lugar de esto se usaran c hilos en 100/c máquinas distribuidas (siendo c es el número de núcleos de dichas máquinas), se mejoraría?. Explique su respuesta.
 
