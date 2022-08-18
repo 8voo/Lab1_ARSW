@@ -85,11 +85,12 @@ A partir de lo anterior, implemente la siguiente secuencia de experimentos para 
 
 	![image](https://user-images.githubusercontent.com/98189066/185271444-01ecf5be-4827-41a3-a63e-8bd785f4d77a.png)
 
-5. 50 hilos.
+4. 50 hilos.
+
 	![image](https://user-images.githubusercontent.com/98189066/185271464-a9658e98-677e-4921-a973-144078c8b6cd.png)
 
 
-7. 100 hilos.
+5. 100 hilos.
 
 	![image](https://user-images.githubusercontent.com/98189066/185271523-5d35abcd-1873-4656-9aa8-089116247301.png)
 
@@ -98,8 +99,7 @@ Al iniciar el programa ejecute el monitor jVisualVM, y a medida que corran las p
 
 Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tiempo de solución vs. número de hilos. Analice y plantee hipótesis con su compañero para las siguientes preguntas (puede tener en cuenta lo reportado por jVisualVM):
 
-![image](https://user-images.githubusercontent.com/98189066/185271543-0ce86eac-abc8-48ba-b53c-c1167db6c519.png)
-
+![image](https://user-images.githubusercontent.com/98189066/185272214-aa50def4-be9b-4379-930d-a6458c5ec450.png)
 
 **Parte IV - Ejercicio Black List Search**
 
