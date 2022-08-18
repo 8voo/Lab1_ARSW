@@ -101,6 +101,8 @@ Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tie
 
 ![image](https://user-images.githubusercontent.com/98189066/185272214-aa50def4-be9b-4379-930d-a6458c5ec450.png)
 
+Como podemos ver en la grafica, el tiempo es menor a medida que se incrementa el numero de hilos. Esto debido a que se divide el rango de busqueda en los distintos hilos, reduciendo la carga que tiene cada uno de ellos. Sin embargo, hay un punto en el que el cambio no es tan significativo. Con esto podemos concluir que hay un punto en el que no es indispensable usar tal cantidad de hilos.
+
 **Parte IV - Ejercicio Black List Search**
 
 1. Según la [ley de Amdahls](https://www.pugetsystems.com/labs/articles/Estimating-CPU-Performance-using-Amdahls-Law-619/#WhatisAmdahlsLaw?):
