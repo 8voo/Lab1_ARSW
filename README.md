@@ -1,9 +1,9 @@
 
 ### Escuela Colombiana de Ingeniería
 ### Arquitecturas de Software - ARSW
+### Enrique Gonzales
+### Sergio Otero
 ## Ejercicio Introducción al paralelismo - Hilos - Caso BlackListSearch
-## Enrique Gonzales
-## Sergio Otero
 
 
 ### Dependencias:
