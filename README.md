@@ -74,7 +74,11 @@ La estrategia de paralelismo antes implementada es ineficiente en ciertos casos,
 A partir de lo anterior, implemente la siguiente secuencia de experimentos para realizar las validación de direcciones IP dispersas (por ejemplo 202.24.34.55), tomando los tiempos de ejecución de los mismos (asegúrese de hacerlos en la misma máquina):
 
 1. Un solo hilo.
+	![image](https://user-images.githubusercontent.com/98189066/185267116-dcb033d7-3472-4f51-b1e6-d7eb3a504526.png)
+	
 2. Tantos hilos como núcleos de procesamiento (haga que el programa determine esto haciendo uso del [API Runtime](https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html)).
+	![image](https://user-images.githubusercontent.com/98189066/185271319-0e7ae837-3247-47ef-ae03-a10ea4b17d07.png)
+
 3. Tantos hilos como el doble de núcleos de procesamiento.
 4. 50 hilos.
 5. 100 hilos.
